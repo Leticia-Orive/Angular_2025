@@ -14,4 +14,8 @@ Objetos, arreglos e interfaces
 1. creamos el archivo
 
 Funciones basicas
-1.creamos el archivo
+1. creamos el archivo
+
+Tarea sobre objetos e interfaces
+1. creamos un nuevo archivo
+2. para cambiar el texto pulsamos F2 + ENTER
