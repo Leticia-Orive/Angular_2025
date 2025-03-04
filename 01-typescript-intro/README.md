@@ -12,3 +12,6 @@ Tipos básicos y conceptos generales
 
 Objetos, arreglos e interfaces
 1. creamos el archivo
+
+Funciones basicas
+1.creamos el archivo
