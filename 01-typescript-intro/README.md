@@ -8,3 +8,7 @@ npm create vite@latest
 
 Tipos básicos y conceptos generales
 1. Dentro de src creamos una carpeta con su archivo
+
+
+Objetos, arreglos e interfaces
+1. creamos el archivo
