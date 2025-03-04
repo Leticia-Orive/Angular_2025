@@ -5,3 +5,6 @@ npm create vite@latest
 3. Te pedira el nombre de proyecto le pones el que quieras
 4. El Framework es Vanilla
 5. Select variante TypeScript
+
+Tipos básicos y conceptos generales
+1. Dentro de src creamos una carpeta con su archivo
