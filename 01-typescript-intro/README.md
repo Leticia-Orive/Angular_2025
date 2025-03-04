@@ -19,3 +19,6 @@ Funciones basicas
 Tarea sobre objetos e interfaces
 1. creamos un nuevo archivo
 2. para cambiar el texto pulsamos F2 + ENTER
+
+ Desestructuración de Objetos
+ 1. creamos un nuevo archivo
