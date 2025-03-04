@@ -1,0 +1,7 @@
+Proyecto 01-Typescript-intro
+1. que tenemos que hacer es crear el proyecto con vite para eso ponemos:
+npm create vite@latest
+2. Si es la primera vez que lo instala te hara una pregunta para saber si quieres seguir con el proceso le marcas Y.
+3. Te pedira el nombre de proyecto le pones el que quieras
+4. El Framework es Vanilla
+5. Select variante TypeScript
