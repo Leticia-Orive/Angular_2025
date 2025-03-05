@@ -37,3 +37,7 @@ Tarea sobre objetos e interfaces
 
  decorados
  1. cresmos un nuevo archivo
+
+
+Encadenamiento opcional
+1. creamos un nuevo archivo
