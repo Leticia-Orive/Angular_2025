@@ -1,10 +1,10 @@
 
-interface Product {
+export interface Product {
     description: string;
     price: number;
 }
 
-const phone: Product = {
+/*const phone: Product = {
     description: 'Samsung Galaxy S10',
     price: 700
 }
@@ -13,13 +13,13 @@ const tablet: Product = {
     description: 'iPad Air 2',
     price: 500
    
-}
+}*/
 interface TaxCalculationOptions {
     tax: number;
     products: Product[];
 }
 
-function taxCalculation(options: TaxCalculationOptions): [number, number] {
+export function taxCalculation(options: TaxCalculationOptions): [number, number] {
     //function taxCalculation({tax, products}: TaxCalculationOptions): [number, number] {
     //function taxCalculation(options: TaxCalculationOptions): [number, number] {
     const {tax, products} = options;
@@ -41,8 +41,8 @@ function taxCalculation(options: TaxCalculationOptions): [number, number] {
 }
 
 
-const shoppingCart = [phone, tablet];
-const tax = 0.16;
+/*const shoppingCart = [phone, tablet];
+const tax = 0.16;*/
 
 //Para que tax no salgo con error se le puede poner un valor por defecto
 //const tax = 0.16;
@@ -52,12 +52,11 @@ const [total, tax] = taxCalculation({
     products: shoppingCart
 }); */
 
-const [total, taxTotal] = taxCalculation({
+/*const [total, taxTotal] = taxCalculation({
     tax: tax, 
     products: shoppingCart
 });
 
 console.log('Total', total);
-console.log('Tax', tax);
+console.log('Tax', tax);*/
 
-export {};

@@ -25,3 +25,7 @@ Tarea sobre objetos e interfaces
 
  Desestructuración de argumentos
  1. Creamos un nuevo archivo
+
+ Importaciones y exportaciones
+ 1. creamos un nuevo archivo
+ 

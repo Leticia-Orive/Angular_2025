@@ -6,7 +6,8 @@ import './style.css'
 //import './topics/04-homework-types';
 //import './topics/05-basic-destructuring';
 //Ctrl + espacio para ver las opciones de autocompletado
-import './topics/06-function-destructuring';
+//import './topics/06-function-destructuring';
+import './topics/07-import-export';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 
