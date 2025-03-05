@@ -31,4 +31,6 @@ Tarea sobre objetos e interfaces
 
  Clases básicas
  1. creamos un nuevo archivo
- 
+
+ Genericos
+ 1. creamos un nuevo archivo
