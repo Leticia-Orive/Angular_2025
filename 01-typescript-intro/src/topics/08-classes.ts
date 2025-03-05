@@ -18,6 +18,17 @@ export class Person {
     
 
 }
+
+export class Hero extends Person {
+    constructor(
+        public alterEgo: string,
+        public age: number,
+        public realName: string,
+    ) {
+        super( realName, 'new york');
+    }
+    
+}
     
 //? significa que es opcional
 /**Esta es otra forma que no esta mal pero mas larga 
@@ -32,7 +43,7 @@ export class Person {
 
 
 
-const ironman = new Person('Ironman', 'New York');
+const ironman = new Hero('Ironman',45, 'Tony');
 console.log(ironman);
 
 /** Se puede poner tambien asi
