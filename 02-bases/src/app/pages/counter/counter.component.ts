@@ -1,16 +1,26 @@
-import { Component, signal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, signal } from "@angular/core";
 
 
 @Component({
 
   templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.css']
+  styleUrls: ['./counter.component.css'],
+  //changeDetection: ChangeDetectionStrategy.OnPush,
+
 })
 
 
 export class CounterComponent {
   counter = 10;
   counterSignal = signal(10);
+
+  constructor(){}
+    /*setInterval(() => {
+      //this.counter += 1;
+      this.counterSignal.update((current) => current + 1);
+      console.log('Tick');
+    },2000);*/
+
 
   // Metodo
   increaseBy(value: number){
