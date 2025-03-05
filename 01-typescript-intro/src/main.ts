@@ -7,7 +7,8 @@ import './style.css'
 //import './topics/05-basic-destructuring';
 //Ctrl + espacio para ver las opciones de autocompletado
 //import './topics/06-function-destructuring';
-import './topics/07-import-export';
+//import './topics/07-import-export';
+import './topics/08-classes';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 
