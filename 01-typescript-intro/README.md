@@ -22,3 +22,6 @@ Tarea sobre objetos e interfaces
 
  Desestructuración de Objetos
  1. creamos un nuevo archivo
+
+ Desestructuración de argumentos
+ 1. Creamos un nuevo archivo
