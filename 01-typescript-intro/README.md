@@ -34,3 +34,6 @@ Tarea sobre objetos e interfaces
 
  Genericos
  1. creamos un nuevo archivo
+
+ decorados
+ 1. cresmos un nuevo archivo
