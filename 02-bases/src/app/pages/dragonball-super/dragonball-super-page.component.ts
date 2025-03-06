@@ -1,5 +1,5 @@
-import { NgClass } from '@angular/common';
-import { Component, computed, signal } from '@angular/core';
+
+import { Component,  signal } from '@angular/core';
 
 interface Character {
   id: number;
@@ -9,11 +9,11 @@ interface Character {
 
 @Component({
   selector: 'app-dragonball-page',
-  imports: [/*NgClass*/],
-  templateUrl: './dragonball-page.component.html',
-  styleUrls: ['./dragonball-page.component.css']
+
+  templateUrl: './dragonball-super-page.component.html',
+  styleUrls: ['./dragonball-super-page.component.css']
 })
-export class DragonballPageComponent {
+export class DragonballSuperPageComponent {
 
   //Creamos unas señales voy hacer dos señales independientes
   name = signal('')
@@ -21,19 +21,11 @@ export class DragonballPageComponent {
 
   characters = signal<Character[]>([
     { id: 1, name: 'Goku', power: 9001 },
-   //  { id: 2, name: 'Vegeta', power: 8000 },
-   //  { id: 3, name: 'Piccolo', power: 3000 },
-   //  { id: 4, name: 'Yamcha', power: 500 },
+     { id: 2, name: 'Vegeta', power: 8000 },
+
   ]);
 
-  //Vamos a constuir nuevas Clases que se llama powerClasses
-  /**Es otra forma de poner todos los power en rojo pero no es la mas apropiada
-   * powerClasses = computed(()  => {
-    return {
-      'text-danger': true,
-    }
-  })
-   */
+
   addCharacter() {
     //console.log(this.name(), this.power());
     if (!this.name() || !this.power() || this.power() <= 0) {
