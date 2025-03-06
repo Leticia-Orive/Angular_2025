@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, computed, signal } from '@angular/core';
 
 interface Character {
   id: number;
@@ -8,6 +9,7 @@ interface Character {
 
 @Component({
   selector: 'app-dragonball-page',
+  imports: [/*NgClass*/],
   templateUrl: './dragonball-page.component.html',
   styleUrls: ['./dragonball-page.component.css']
 })
@@ -18,4 +20,15 @@ export class DragonballPageComponent {
     { id: 4, name: 'Yamcha', power: 500 },
      { id: 3, name: 'Piccolo', power: 3000 },
   ]);
+
+  //Vamos a constuir nuevas Clases que se llama powerClasses
+  /**Es otra forma de poner todos los power en rojo pero no es la mas apropiada
+   * powerClasses = computed(()  => {
+    return {
+      'text-danger': true,
+    }
+  })
+   */
+
+
 }
