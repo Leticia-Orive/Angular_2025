@@ -14,6 +14,11 @@ interface Character {
   styleUrls: ['./dragonball-page.component.css']
 })
 export class DragonballPageComponent {
+
+  //Creamos unas señales voy hacer dos señales independientes
+  name = signal('Gohan')
+  power = signal(100)
+
   characters = signal<Character[]>([
     { id: 1, name: 'Goku', power: 9001 },
      { id: 2, name: 'Vegeta', power: 8000 },
