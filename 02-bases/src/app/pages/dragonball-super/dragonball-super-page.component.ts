@@ -5,7 +5,7 @@ import { CharacterAddComponent } from '../../components/dragonball/character-add
 
 
 @Component({
-  templateUrl: 'app-dragonball-super-page.component.html',
+  templateUrl: './dragonball-super-page.component.html',
   selector: 'dragonball-super',
   imports: [CharacterListComponent, CharacterAddComponent],
 })

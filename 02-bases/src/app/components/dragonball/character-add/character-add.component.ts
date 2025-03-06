@@ -2,7 +2,7 @@ import { Component, output, signal } from '@angular/core';
 import { Character } from '../../../interfaces/charecter.interface';
 
 @Component({
-  selector: 'app-character-add',
+  selector: 'dragonball-character-add',
   imports: [],
   templateUrl: './character-add.component.html',
   styleUrl: './character-add.component.css'
@@ -10,7 +10,7 @@ import { Character } from '../../../interfaces/charecter.interface';
 export class CharacterAddComponent {
   name = signal('');
   power = signal(0);
-
+//podemos confundirnos con el decorador de output pero el output que queremos es el de una señal que se va a emitir
   newCharacter = output<Character>();
 
   addCharacter() {

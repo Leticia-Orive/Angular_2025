@@ -2,7 +2,7 @@ import {  Component, input } from '@angular/core';
 import type { Character } from '../../../interfaces/charecter.interface';
 
 @Component({
-  selector: 'app-character-list',
+  selector: 'dragonball-character-list',
   imports: [],
   templateUrl: './character-list.component.html',
 
