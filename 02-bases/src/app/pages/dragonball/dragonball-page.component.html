@@ -23,22 +23,27 @@
   </div>
 
   <div class="col-12 col-sm-6">
-    <h3>Listado</h3>
+    <h3>Listado fuertes</h3>
     <ul>
       @for (character of characters(); track character.id; let idx = $index) {
-      <li>
-        <span>{{idx + 1 }} - {{character.name}}</span>
-        <!--Esto significa:
-        [class.text-danger]="character.power > 9000" que mayor de 9000 quiero power en rojo
-        [class.text-danger]="character.power < 9000" que si es menor de 9000 quiero power en azul
-        Si es = 9000 no quiero que pase nada-->
-        <strong [class.text-danger]="character.power > 9000"
-          [class.text-primary]="character.power < 9000"> ({{ character.power }})</strong>
-          <!--Otra forma de poner el power pero en este caso serian todos en rojo
-          <strong [ngClass]="powerClasses()"></strong>-->
-            ({{ character.power }})
+        <!--Hago un @if para preguntar quien tiene poderes mayores que 500 si hay alguno menor de 500 nos saldra un mensaje-->
+        @if(character.power > 500) {
+        <li>
+          <span>{{idx + 1 }} - {{character.name}}</span>
+          <!--Esto significa:
+          [class.text-danger]="character.power > 9000" que mayor de 9000 quiero power en rojo
+          [class.text-danger]="character.power < 9000" que si es menor de 9000 quiero power en azul
+          Si es = 9000 no quiero que pase nada-->
+          <strong [class.text-danger]="character.power > 9000"
+            [class.text-primary]="character.power < 9000"> ({{ character.power }})</strong>
+            <!--Otra forma de poner el power pero en este caso serian todos en rojo
+            <strong [ngClass]="powerClasses()"></strong>-->
+              ({{ character.power }})
+        </li>
+        }@else {
+          <li><strong>Aqui no hay  nadie</strong></li>
+        }
 
-      </li>
       }
     </ul>
   </div>
