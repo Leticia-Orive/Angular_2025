@@ -3,18 +3,15 @@
 
 <section class="row">
   <div class="col-12 col-sm-6">
+    <!--dragonball-character-add-->
+    <!--Aqui-->
 
-
-    <input
-
-
-    />
-
-
-    <button (click)="addCharacter()" class="mt-2 btn btn-primary"> Agregar </button>
+    <!--Hasta aqui-->
   </div>
 
   <div class="col-12 col-sm-6">
-    <dragonball-character-list [characters]="characters()"/>
+    <dragonball-character-list
+    listName="Listado de personajes"
+    [characters]="characters()"/>
   </div>
 </section>
