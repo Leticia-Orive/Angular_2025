@@ -1,28 +1,35 @@
 import { Routes } from '@angular/router';
 import { CounterPageComponent } from './pages/counter/counter-page.component';
 import { HeroPageComponent } from './pages/hero/hero-page.component';
-import { DragonballPageComponent } from './pages/dragonball/dragonball-page.component';
+
+import { DragonballComponent } from './pages/dragonball/dragonball.component';
 import { DragonballSuperPageComponent } from './pages/dragonball-super/dragonball-super-page.component';
+
 
 export const routes: Routes = [
   {
     path: '',
-    component: CounterPageComponent,
+    component: CounterPageComponent
+
   },
   {
     path: 'hero',
-    component: HeroPageComponent,
+    component: HeroPageComponent
   },
   {
     path: 'dragonball',
-    component: DragonballPageComponent,
+    component: DragonballComponent
   },
   {
     path: 'dragonball-super',
-    component: DragonballSuperPageComponent,
+    component: DragonballSuperPageComponent
   },
-  {
-    path: '**',
-    redirectTo: '',
-  },
+
+
+
+  //redireccionar a la pagina principal si no se encuentra la ruta
+{
+  path: '**',
+  redirectTo: ''
+}
 ];
