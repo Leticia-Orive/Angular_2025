@@ -8,6 +8,7 @@ import type { Character } from '../../../interfaces/charecter.interface';
 
 })
 export class CharacterListComponent {
+  //mandar info del padre al hijo mediante la funcion: input()
 
   characters = input.required<Character[]>();
   listName = input.required<string>();
