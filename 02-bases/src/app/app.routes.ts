@@ -7,23 +7,22 @@ import { DragonballSuperPageComponent } from './pages/dragonball-super/dragonbal
 export const routes: Routes = [
   {
     path: '',
-    component: CounterPageComponent
+    component: CounterPageComponent,
   },
   {
     path: 'hero',
-    component: HeroPageComponent
+    component: HeroPageComponent,
   },
   {
     path: 'dragonball',
     component: DragonballPageComponent,
   },
-
-{
-  path: 'dragonball-super',
-  component: DragonballSuperPageComponent,
-},
+  {
+    path: 'dragonball-super',
+    component: DragonballSuperPageComponent,
+  },
   {
     path: '**',
-    redirectTo: ''
+    redirectTo: '',
   },
 ];
