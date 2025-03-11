@@ -5,7 +5,8 @@
  <!--gifs-list-->
  <!--desde aqui le vamos a pasar los gifs padres-->
  <!--TODO:-->
-<app-gif-list [gifs]="gifs()" />
+<!--<app-gif-list [gifs]="gifs()" />-->
+<app-gif-list [gifs]="GifService.trendingGifs()" />
 <!--gifs-list-item-->
 </section>
 

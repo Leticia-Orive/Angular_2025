@@ -1,8 +1,8 @@
-import { Component, inject, OnInit, signal } from '@angular/core';
+import { Component, computed, inject, OnInit, signal } from '@angular/core';
 import { GifListComponent } from '../../components/gif-list/gif-list.component';
 import { GifService } from '../../services/gifs.service';
 
-const imageUrls: string[] = [
+/*const imageUrls: string[] = [
   "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
   "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
   "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
@@ -15,7 +15,7 @@ const imageUrls: string[] = [
   "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg",
   "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg",
   "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg"
-];
+];*/
 
 @Component({
   selector: 'app-trending-page',
@@ -23,16 +23,16 @@ const imageUrls: string[] = [
   templateUrl: './trending-page.component.html',
   styleUrls: ['./trending-page.component.css']
 })
-export default class TrendingPageComponent implements OnInit {
+export default class TrendingPageComponent  {
 
-  constructor() { }
 
-  ngOnInit() {
-  }
 
-  gifs = signal(imageUrls);
 
   //Inyectamos o importamos el servicio
-  GifService = inject(GifService)
+ // GifService = inject(GifService)
+  //Ahora lo vamos a invocar desde el servicio
+  GifService = inject(GifService);
+  //propiedades computadas
+//gifs = computed( () => this.GifService.loadTrendingGifs()) ;
 
 }
